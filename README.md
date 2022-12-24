@@ -27,6 +27,8 @@ python ethermail.py
 + ```Delay(sec)``` - delay between referral registrations in seconds
 + ```Threads``` - number of simultaneous registrations
 
+Temporary email addresses are used to register referrals
+
 **Successfully registered referrals are saved in** ```registered.txt``` **in the format {email}:{address}:{private_key}**
 
 ## 📧 Contacts
