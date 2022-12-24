@@ -127,7 +127,7 @@ async def worker():
                 await add_email(client, email, useragent)
 
         except:
-            logger.exception('Error\n')
+            logger.error('Error\n')
         else:
             logger.info('Saving data')
             with open('registered.txt', 'a', encoding='utf-8') as file:
