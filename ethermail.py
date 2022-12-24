@@ -15,6 +15,7 @@ async def sending_captcha(client: ClientSession):
             &googlekey=6LdmCaMhAAAAAHuCRyI8Y_K3JbITDhW623QkEPIi&pageurl=https://ethermail.io/')
         data = await response.text()
         if 'ERROR' in data:
+            logger.error(print(data))
             return(await sending_captcha(client))
         id = data[3:]
         return(await solving_captcha(client, id))
