@@ -1,0 +1,5 @@
+aiohttp==3.8.1
+eth_account==0.5.8
+loguru==0.6.0
+pyuseragents==1.0.5
+web3==5.27.0
