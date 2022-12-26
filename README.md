@@ -14,7 +14,7 @@ pip install -r requirements.txt
 ```
 
 ## 💻 Preparing
-+ Register and replenish the balance <a href="https://captcha.guru/">captcha.guru</a></p>
++ Register and replenish the balance <a href="https://captcha.guru/">captcha.guru</a>
 + Run the bot:
 ```python
 python ethermail.py
