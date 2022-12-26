@@ -22,7 +22,7 @@ python ethermail.py
 
 ## ✔️ Usage
 + ```Referral code``` - your referrals code
-  + Example: ```https://ethermail.io/?afid=630f3vh16ec84729e1c017f3```, code = <i>630f3vh16ec84729e1c017f3</i>
+  + Example: ```https://ethermail.io/?afid=630f3vh16ec84729e1c017f3```, code = ```630f3vh16ec84729e1c017f3```
 + ```Captcha key``` - key from captcha.guru(the key is on the main page)
 + ```Delay(sec)``` - delay between referral registrations in seconds
 + ```Threads``` - number of simultaneous registrations
