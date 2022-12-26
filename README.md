@@ -29,7 +29,7 @@ python ethermail.py
 
 Temporary email addresses are used to register referrals
 
-**Successfully registered referrals are saved in** ```registered.txt``` **in the format {email}:{address}:{private_key}**
+**Successfully registered referrals are saved in** ```registered.txt``` **in the format** ```{email}:{address}:{private_key}```
 
 ## 📧 Contacts
 + Telegram - [@flamingoat](https://t.me/flamingoat)
