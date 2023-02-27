@@ -14,7 +14,6 @@ pip install -r requirements.txt
 ```
 
 ## 💻 Preparing
-+ Register and replenish the balance <a href="https://captcha.guru/">captcha.guru</a>
 + Run the bot:
 ```python
 python ethermail.py
@@ -23,7 +22,6 @@ python ethermail.py
 ## ✔️ Usage
 + ```Referral code``` - your referrals code
   + Example: ```https://ethermail.io/?afid=630f3vh16ec84729e1c017f3```, code = ```630f3vh16ec84729e1c017f3```
-+ ```Captcha key``` - key from captcha.guru(the key is on the main page)
 + ```Delay(sec)``` - delay between referral registrations in seconds
 + ```Threads``` - number of simultaneous registrations
 
