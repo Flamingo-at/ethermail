@@ -25,8 +25,7 @@ async def create_wallet() -> tuple[str, str]:
 
 
 async def create_signature(private_key: str) -> str:
-    message = encode_defunct(
-        text='By signing this message you agree to the Terms and Conditions and Privacy Policy\n\nNONCE: 1')
+    message = encode_defunct(text='By signing this message you agree to the Terms and Conditions and Privacy Policy\n\nNONCE: 1')
     signed_message = w3.eth.account.sign_message(message, private_key)
     return signed_message.signature.hex()
 
@@ -34,7 +33,7 @@ async def create_signature(private_key: str) -> str:
 @retry(retry=retry_if_exception(Exception), stop=stop_after_attempt(2), reraise=True)
 async def get_nonce(client: ClientSession, address: str):
     try:
-        response = await client.post('https://ethermail.io/frontend-api/account/nonce',
+        response = await client.post('https://ethermail.io/api/auth/nonce',
                                      json={
                                          'walletAddress': address
                                      })
@@ -46,7 +45,7 @@ async def get_nonce(client: ClientSession, address: str):
 @retry(retry=retry_if_exception(Exception), stop=stop_after_attempt(2), reraise=True)
 async def register(client: ClientSession, address: str, private_key: str):
     try:
-        response = await client.post('https://ethermail.io/frontend-api/account/authenticate',
+        response = await client.post('https://ethermail.io/api/auth/login',
                                      json={
                                          "web3Address": address,
                                          "signature": await create_signature(private_key)
